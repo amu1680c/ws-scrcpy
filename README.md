@@ -2,13 +2,12 @@
 
 用来在浏览器中控制 Android 设备。
 
-https://hub.docker.com/r/scavin/ws-scrcpy/  
-https://github.com/scavin/ws-scrcpy-docker/
+https://hub.docker.com/r/amu1680c/ws-scrcpy/  
 
 ## 使用
 
 ```
-docker run --name ws-scrcpy -d -p 8000:8000 scavin/ws-scrcpy
+docker run --name ws-scrcpy -d -p 8000:8000 amu1680c/ws-scrcpy
 docker exec ws-scrcpy adb connect android.device.ip:5555
 ```
 
