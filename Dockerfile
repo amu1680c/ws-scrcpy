@@ -1,5 +1,5 @@
-FROM node:16
-MAINTAINER Scavin <scavin@appinn.com>
+FROM node:16.20-bookworm
+MAINTAINER amu1680c <amu1680c@gmail.com>
 
 ENV LANG C.UTF-8
 WORKDIR /ws-scrcpy
