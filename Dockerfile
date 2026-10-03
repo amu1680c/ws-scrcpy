@@ -1,4 +1,4 @@
-FROM node:16-alpine AS builder
+FROM node:22-alpine AS builder
 
 WORKDIR /ws-scrcpy
 
@@ -13,7 +13,7 @@ RUN git clone https://github.com/NetrisTV/ws-scrcpy.git .
 RUN npm install && \
     npm run dist
 
-FROM node:16-alpine
+FROM node:22-alpine
 
 ENV LANG=C.UTF-8 \
     NODE_ENV=production
