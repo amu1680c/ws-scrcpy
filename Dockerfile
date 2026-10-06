@@ -1,4 +1,4 @@
-FROM node:16-bookworm AS builder
+FROM node:22-bookworm AS builder
 
 WORKDIR /ws-scrcpy
 
@@ -7,7 +7,7 @@ RUN git clone https://github.com/NetrisTV/ws-scrcpy.git .
 RUN npm install && \
     npm run dist
 
-FROM node:16-bookworm-slim
+FROM node:22-bookworm-slim
 
 ENV LANG=C.UTF-8 \
     NODE_ENV=production
